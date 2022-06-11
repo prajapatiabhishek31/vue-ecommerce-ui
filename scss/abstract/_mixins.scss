@@ -1,0 +1,73 @@
+// Media queries start 
+@use "sass:map";
+
+@mixin up-media($bp) {
+    $bp-value: map.get($up-breakpoints, $bp);
+    @if $bp-value != null{
+        @media screen and (min-width: $bp-value) {
+            @content;
+        }
+    } @else {
+        @error "Up media query break point: '#{$bp}' doesn't exists!";
+    }
+}
+
+@mixin down-media($bp) {
+    $bp-value: map.get($down-breakpoints, $bp);
+    @if $bp-value != null{
+        @media screen and (max-width: $bp-value) {
+            @content;
+        }
+    } @else {
+        @error "Down media query break point: '#{$bp}' doesn't exists!";
+    }
+}
+// Media queries end 
+
+// Typography start
+@mixin set-typography($fs, $lh, $fw) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin generate-typography($bp: null, $respond-to: "up") {
+    @each $typography-name, $typography-values in $typography {
+        $font-size: nth($typography-values, 1);
+        $line-height: nth($typography-values, 2);
+        $font-weight: nth($typography-values, 3);
+        @if $bp == null {
+            .#{$typography-name} {
+                @include set-typography($font-size, $line-height, $font-weight);
+            }
+        } @else if $respond-to == "up"{
+            .#{$typography-name}\:#{$bp} {
+                @include set-typography($font-size, $line-height, $font-weight);
+            }
+        } @else if $respond-to == "down" {
+            .#{$typography-name}\:d-#{$bp} {
+                @include set-typography($font-size, $line-height, $font-weight);
+            }
+        }
+    }
+}
+
+@mixin typography-at-bp($bp: null, $respond-to: "up") {
+    @if $bp == null {
+        @include generate-typography();
+    } 
+    @else if $respond-to == "up" {
+        @include up-media($bp) {
+            @include generate-typography($bp);
+        }
+    }
+    @else if $respond-to == "down" {
+        @include down-media($bp) {
+            @include generate-typography($bp, "down");
+        }
+    }
+    @else {
+        @error "Invalid Value of $respond-to: '#{$respond-to}'. Possible values are 'up' and 'down'!";
+    }
+}
+// Typography end

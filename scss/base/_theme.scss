@@ -1,0 +1,16 @@
+// fallback theme -> light theme
+.light-theme {
+    --c-body-bg: #fff;
+    --i-stroke-color: var(--th-i-c-light);
+    --c-text: var(--th-c-text-light-100);
+    --c-border: var(--th-c-accent-1);
+    --c-btn-toggle-bg: var(--th-c-btn-toggle-bg-light);
+}
+
+.dark-theme {
+    --c-body-bg: var(--th-dark-c-body-bg);
+    --i-stroke-color: var(--th-i-c-dark);
+    --c-text: var(--th-c-text-dark-100);
+    --c-border: var(--th-c-dark-2);
+    --c-btn-toggle-bg: var(--th-c-btn-toggle-bg-dark);
+}
