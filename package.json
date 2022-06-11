@@ -1,0 +1,19 @@
+{
+  "name": "vue-ecommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/prajapatiabhishek31/vue-ecommerce.git",
+  "author": "Abhishek Prajapati <bhishekprajapati@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-sass": "sass ./scss/home.scss ./css/home.css -w",
+    "process-icons": "yarn optimize-icons && yarn generate-icons-sprite",
+    "optimize-icons": "svgo -f ./assets/icons -o ./assets/optimized-icons",
+    "generate-icons-sprite": "svg-sprite-generate -d assets/optimized-icons -o assets/sprite.svg"
+  },
+  "devDependencies": {
+    "sass": "^1.52.1",
+    "svg-sprite-generator": "^0.0.7",
+    "svgo": "^2.8.0"
+  }
+}
