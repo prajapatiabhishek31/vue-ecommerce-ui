@@ -1,3 +1,4 @@
+@use "sass:math";
 @import '../vendor/svg-uri';
 
 :root {
@@ -23,4 +24,9 @@
     --th-i-c-dark: #fff;
     --th-c-btn-toggle-bg-light: var(--th-c-accent-1);
     --th-c-btn-toggle-bg-dark: var(--th-c-dark-2);
+
+    --th-c-card-bg-light: var(--th-c-accent-1);
+    --th-c-card-bg-dark: var(--th-c-dark-2);
+
+    --pad-top: #{math.div(96, 16)*1em};
 }

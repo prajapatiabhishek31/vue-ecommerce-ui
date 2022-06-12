@@ -5,6 +5,7 @@
     --c-text: var(--th-c-text-light-100);
     --c-border: var(--th-c-accent-1);
     --c-btn-toggle-bg: var(--th-c-btn-toggle-bg-light);
+    --c-card-bg: var(--th-c-btn-toggle-bg-light);
 }
 
 .dark-theme {
@@ -13,4 +14,5 @@
     --c-text: var(--th-c-text-dark-100);
     --c-border: var(--th-c-dark-2);
     --c-btn-toggle-bg: var(--th-c-btn-toggle-bg-dark);
+    --c-card-bg: var(--th-c-btn-toggle-bg-dark);
 }
