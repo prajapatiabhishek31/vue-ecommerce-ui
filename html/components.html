@@ -252,5 +252,36 @@
         <span class="badge badge-md">Badge - md</span>
         <span class="badge badge-lg">Badge - lg</span>
     </div>
+
+    <!-- input fields -->
+    <label class="field-label" for="input-field">Input Field</label>
+    <input class="form-field" type="text" placeholder="Default size" id="input-field"/>
+
+    <label class="field-label field-label-lg" for="input-field">Input Field</label>
+    <input class="form-field form-field-lg" type="text" placeholder="Large size" id="input-field"/>
+
+    <label class="field-label field-label-lg" for="input-field">Input Field</label>
+    <input class="form-field form-field-lg form-field-block" type="text" placeholder="Full length" id="input-field"/>
+
+    <!-- dropdowns -->
+    <div class="dropdown-menu has-selected">
+        <div class="dropdown-menu__btn" for="dropdown-menu-toggler">
+            <span class="dropdown-menu__btn-placeholder">Select from dropdown</span>
+            <span class="dropdown-menu__btn-icon">
+                <svg id="dropdown-icon" class="icon icon-sw-2">
+                    <use href="#angle-arrow-down"></use>
+                </svg>
+                <svg id="remove-selection-icon" class="icon icon-filled icon-sw-0">
+                    <use href="#cross"></use>
+                </svg>
+            </span>
+        </div>
+        <div class="dropdown-options">
+            <div class="dropdown-item">option 1</div>
+            <div class="dropdown-item">option 2</div>
+            <div class="dropdown-item">option 3</div>
+            <div class="dropdown-item">option 4</div>
+        </div>
+    </div>
 </body>
 </html>
