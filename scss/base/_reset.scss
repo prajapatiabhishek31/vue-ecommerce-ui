@@ -19,6 +19,10 @@ img, span, time, a, button {
     display: inline-block;
 }
 
+a {
+    all: unset;
+}
+
 body {
     background-color: var(--c-body-bg);
     font-family: 'Montserrat', sans-serif;
