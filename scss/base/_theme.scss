@@ -6,6 +6,8 @@
     --c-border: var(--th-c-accent-1);
     --c-btn-toggle-bg: var(--th-c-btn-toggle-bg-light);
     --c-card-bg: var(--th-c-btn-toggle-bg-light);
+    --c-product-card-badge-border: #fff;
+    --c-text-strike-through: var(--th-c-text-light-24);
 }
 
 .dark-theme {
@@ -15,4 +17,7 @@
     --c-border: var(--th-c-dark-2);
     --c-btn-toggle-bg: var(--th-c-btn-toggle-bg-dark);
     --c-card-bg: var(--th-c-btn-toggle-bg-dark);
+    --c-product-card-badge-border: var(--th-c-dark-3);
+    --c-text-strike-through: var(--th-c-text-dark-24);
+
 }

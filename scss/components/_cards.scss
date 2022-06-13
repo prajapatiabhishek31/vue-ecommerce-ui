@@ -28,3 +28,97 @@
         box-shadow: 0.1rem -0.4rem 2rem #528cf815;
     }
 }
+
+// product card
+.product-card {
+    width: math.div(272, 16)*1em;
+    display: inline-block;
+
+    &__img-wrapper {
+        width: 100%;
+        height: math.div(272, 16)*1em;
+        padding: math.div(45, 16)*1em;
+        border-radius: 2em;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    &__badge {
+        background-color: var(--th-c-accent-2);
+        border: .25rem solid var(--c-product-card-badge-border);
+        border-radius: 20rem;
+        @include apply-font("h6-b");
+        text-transform: uppercase;
+        color: #fff;
+        padding: .5rem 1rem;
+        float: right;
+        margin: -90% -10% 0 0;
+    }
+
+    &__content {
+        margin-top: 2em;
+    }
+
+    &__meta {
+        margin-top: 1em;
+    }
+
+    &__price {
+
+        &--last {
+            color: var(--c-text-strike-through);
+            text-decoration: line-through;
+        }
+        &--new {}
+    }
+
+    // extended card styles 
+    &--extended {
+        width: fit-content;
+        height: fit-content;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & * {
+            margin: 0;
+            padding: 0;
+        }
+        & > .product-card__img-wrapper {
+            width: math.div(96, 16)*1em;
+            height: math.div(96, 16)*1em;
+            border-radius: 1em;
+        }
+        
+        & .product-card__badge {
+            display: none;
+        }
+
+        & .badge {
+            display: none;
+        }
+
+        & > .product-card__content {
+            margin-left: 1em;
+        }
+
+        &  .product-card__name {
+            @include apply-font("h4-sb");
+        }
+
+        & .product-card__price {
+            @include apply-font("h6-sb");
+        }
+
+        & .product-card__price--last{
+            color: var(--c-text-strike-through);
+        }
+    }
+}

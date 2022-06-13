@@ -30,6 +30,7 @@
     font-size: $fs;
     line-height: $lh;
     font-weight: $fw;
+    color: var(--c-text);
 }
 
 @mixin generate-typography($bp: null, $respond-to: "up") {
