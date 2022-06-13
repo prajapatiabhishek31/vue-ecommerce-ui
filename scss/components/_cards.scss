@@ -33,6 +33,7 @@
 .product-card {
     width: math.div(272, 16)*1em;
     display: inline-block;
+    cursor: pointer;
 
     &__img-wrapper {
         width: 100%;
@@ -119,6 +120,10 @@
 
         & .product-card__price--last{
             color: var(--c-text-strike-through);
+        }
+
+        & > .btn {
+            margin-left: 1em;
         }
     }
 }

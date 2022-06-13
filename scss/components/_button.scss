@@ -40,6 +40,26 @@
         }
     }
 
+    &-tertiary {
+        font-size: 1rem;
+        border: math.div(2, 16)*1em solid var(--c-border);
+        padding: 1em;
+        border-radius: 50%;
+        width: px-to-rem(56px);
+        height: px-to-rem(56px);
+        cursor: pointer;
+        background-color: transparent;
+        transition: border-color ease 200ms;
+
+        &--danger:hover {
+            border-color: var(--th-c-accent-2);
+        }
+
+        & .icon {
+            vertical-align: middle;
+        }
+    }
+
     &-counter {
         @include make-button-layout(20px, 32px, 16px, 8px, 24px);
         border-color: var(--c-border);
