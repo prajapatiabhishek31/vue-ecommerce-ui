@@ -1,0 +1,29 @@
+@use "sass:math";
+
+.th-card {
+    background-color: var(--c-card-bg);
+}
+
+.category-card {
+    width: math.div(128, 16)*1em;
+    padding: math.div(28, 16)*1em 1em;
+    text-align: center;
+    border-radius: math.div(24, 16)*1em;
+    cursor: pointer;
+    transition: transform ease 400ms, box-shadow ease 400ms;
+
+    &__name {
+        width: 100%;
+        display: inline-block;
+        text-transform: capitalize;
+        margin-top: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &:hover {
+        transform: translateY(-2%) scale(1.02);
+        box-shadow: 0.1rem -0.4rem 2rem #528cf815;
+    }
+}

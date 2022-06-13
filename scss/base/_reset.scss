@@ -21,6 +21,9 @@ img, span, time, a, button {
 
 a {
     all: unset;
+    box-sizing: border-box;
+    display: inline-block;
+    font: inherit;
 }
 
 body {

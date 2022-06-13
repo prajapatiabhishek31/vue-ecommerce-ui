@@ -12,6 +12,10 @@
     fill: var(--i-stroke-color);
 }
 
+.stroke-primary {
+    stroke: var(--th-c-primary-100);
+}
+
 // stroke-width
 .icon-sw-0 {
     stroke-width: 0;
