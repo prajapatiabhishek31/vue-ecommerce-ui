@@ -121,7 +121,7 @@ input[type="radio"].btn-radio--lg {
 
 // pagination button
 
-.btn-next {
+.scroll-btn {
     font-size: 1rem;
     border: math.div(2, 16)*1em solid var(--th-c-primary-100);
     padding: 1em;
@@ -130,4 +130,8 @@ input[type="radio"].btn-radio--lg {
     height: px-to-rem(56px);
     cursor: pointer;
     background-color: transparent;
+
+    &--primary {
+        border: none;
+    }
 }
