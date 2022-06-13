@@ -8,6 +8,7 @@
 
 .title {
     @include apply-font("h2-b");
+    color: var(--c-text);
 
     &-md {
         @include apply-font("h1-b");
