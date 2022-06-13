@@ -21,7 +21,7 @@
         }
     </style>
 </head>
-<body class="light-theme">
+<body class="dark-theme">
     <?xml version="1.0" encoding="utf-8"?>
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     <symbol id="angle-arrow-down" viewBox="0 0 16 16"><path d="M2 5L8 11L14 5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -500,42 +500,49 @@
         <h4 class="title">Product Card</h4>
 
         <!-- default card -->
+        <!-- full card -->
+        <article class="l-product-card">
+            <div class="l-product-card__row">
+                <figure class="th-card product-media">
+                    <img class="product-media__img" src="../assets/product-images/Product-1.png" alt="product-image">
+                </figure>
+            </div>
+            <div class="l-product-card__row l-product-card__row--absolute">
+                <em class="discount-badge">20% off</em>
+            </div>
+            <div class="l-product-card__row">
+                <header class="l-product-card__header">
+                    <h3 class="h3-sb"><strong>Product Name Here</strong></h3>
+                </header>
+                <span class="l-product-card__category">
+                    <em class="badge">Category</em>
+                </span>
+                <strong class="price--old h5-sb">INR 300</strong>
+                <strong class="h5-sb">INR 100</strong>
+            </div>
+        </article>  
 
-
-        <article class="product-card">
-            <div class="th-card  product-card__img-wrapper">
-                <img class="product-card__img" src="../assets/product-images/Product-1.png" alt="product-image">
+        <!-- extended card -->
+        <article class="l-product-card l-product-card--extended">
+            <div class="l-product-card__row">
+                <figure class="th-card product-media">
+                    <img class="product-media__img" src="../assets/product-images/Product-1.png" alt="product-image">
+                </figure>
             </div>
-            <span class="product-card__badge">20% off</span>
-            <div class="product-card__content">
-                <h3 class="product-card__name h3-sb"><strong>Product Name Here</strong></h3>
-                <div class="product-card__meta">
-                    <span class="badge">Category</span>
-                    <span class="product-card__price product-card__price--last h5-sb">INR 300</span>
-                    <span class="product-card__price product-card__price--new h5-sb">INR 100</span>
-                </div>
+            <div class="l-product-card__row">
+                <header class="l-product-card__header">
+                    <h3 class="h3-sb"><strong>Product Name Here</strong></h3>
+                </header>
+                <strong class="price--old h6-sb">INR 300</strong>
+                <strong class="h6-sb">INR 100</strong>
             </div>
-        </article>        
-
-        <article class="product-card product-card--extended">
-            <div class="th-card  product-card__img-wrapper">
-                <img class="product-card__img" src="../assets/product-images/Product-1.png" alt="product-image">
-            </div>
-            <span class="product-card__badge">20% off</span>
-            <div class="product-card__content">
-                <h3 class="product-card__name h3-sb"><strong>Product Name Here</strong></h3>
-                <div class="product-card__meta">
-                    <span class="badge">Category</span>
-                    <span class="product-card__price product-card__price--last h5-sb">INR 300</span>
-                    <span class="product-card__price product-card__price--new h5-sb">INR 100</span>
-                </div>
-            </div>
-            <button type="button" class="btn btn-tertiary btn-tertiary--danger">
+            <button type="button" class="l-product-card__action-btn btn btn-tertiary btn-tertiary--danger">
                 <svg class="icon icon-filled icon-sw-0">
                     <use href="#cross"></use>
                 </svg>
             </button>
         </article>
+
     </section>
 
 

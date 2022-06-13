@@ -20,3 +20,13 @@
         @include make-badge-layout(20px, 32px, 32px, 12px, 32px);
     }
 }
+
+.discount-badge {
+    background-color: var(--th-c-accent-2);
+    color: #fff;
+    padding: .5rem 1rem;
+    border: .25rem solid var(--c-product-card-badge-border);
+    border-radius: 20rem;
+    text-transform: uppercase;
+    @include apply-font("h6-b");
+}

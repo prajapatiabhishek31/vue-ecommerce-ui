@@ -26,7 +26,16 @@ a {
     font: inherit;
 }
 
+em {
+    all: unset;
+    box-sizing: inherit;
+    display: inline-block;
+}
+
 strong {
+    all: unset;
+    box-sizing: inherit;
+    display: inline-block;
     font-weight: inherit;
 }
 
