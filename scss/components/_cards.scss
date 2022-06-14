@@ -1,7 +1,12 @@
 @use "sass:math";
 
 .th-card {
-    background-color: var(--c-card-bg);
+    &-bg {
+        background-color: var(--c-card-bg);
+    }
+    &-border {
+        border: px-to-rem(2px) solid var(--c-border);
+    }
 }
 
 .category-card {
