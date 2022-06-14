@@ -3,6 +3,13 @@
 .th-card {
     &-bg {
         background-color: var(--c-card-bg);
+        transition: background-color ease 400ms;
+        &.when-hovered {
+            background-color: transparent;
+            &:hover {
+                background-color: var(--c-card-bg);
+            }
+        }
     }
     &-border {
         border: px-to-rem(2px) solid var(--c-border);
