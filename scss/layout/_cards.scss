@@ -18,23 +18,14 @@
     &__row:first-child {
         width: math.div(272, 16)*1em;
         height: math.div(272, 16)*1em;
+        margin-bottom: 2em;
         border-radius: 2em;
         overflow: hidden;
     }
 
-    &--product-card {
-        & > #{$layout-prefix}__row {
-            &:first-child {
-                margin-bottom: 2em;
-            }
-        }
-        
-        // nested
-        & #{$layout-prefix}__header {
-            margin-bottom: 1em;
-        }
+    &__header {
+        margin-bottom: 1em;
     }
-    
     
     // product extended card 
     &--product-extended-card {
@@ -54,10 +45,5 @@
             } 
         }
     
-    }
-
-    // blog card
-    &--blog-card {
-        
     }
 }
