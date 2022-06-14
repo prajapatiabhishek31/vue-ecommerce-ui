@@ -52,7 +52,7 @@
         transition: border-color ease 200ms;
 
         &--danger:hover {
-            border-color: var(--th-c-accent-2);
+            border-color: rgba(map-get($map: $additional-colors, $key: "accent-2"), 0.6);
         }
     }
 
