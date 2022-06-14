@@ -1,0 +1,63 @@
+@use "sass:math";
+
+// post card
+.l-post-card {
+    $layout-prefix: &;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+
+    // to position badge
+    &__row--absolute {
+        position: absolute;
+        top: 10%;
+        right: -10%;
+        z-index: 0;
+    }
+
+    &__row:first-child {
+        width: math.div(272, 16)*1em;
+        height: math.div(272, 16)*1em;
+        border-radius: 2em;
+        overflow: hidden;
+    }
+
+    &--product-card {
+        & > #{$layout-prefix}__row {
+            &:first-child {
+                margin-bottom: 2em;
+            }
+        }
+        
+        // nested
+        & #{$layout-prefix}__header {
+            margin-bottom: 1em;
+        }
+    }
+    
+    
+    // product extended card 
+    &--product-extended-card {
+        display: inline-flex;
+
+        &#{$layout-prefix} {
+    
+            & > #{$layout-prefix}__row:first-child {
+                width: math.div(96, 16)*1em;
+                height: math.div(96, 16)*1em;
+                margin-right: 1em;
+                border-radius: 1em;
+            }
+        
+            & > #{$layout-prefix}__action-btn {
+                margin-left: 1em;
+            } 
+        }
+    
+    }
+
+    // blog card
+    &--blog-card {
+        
+    }
+}
