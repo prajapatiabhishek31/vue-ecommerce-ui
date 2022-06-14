@@ -21,7 +21,7 @@
         }
     </style>
 </head>
-<body class="light-theme">
+<body class="dark-theme">
     <?xml version="1.0" encoding="utf-8"?>
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
     <symbol id="angle-arrow-down" viewBox="0 0 16 16"><path d="M2 5L8 11L14 5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -645,6 +645,68 @@
                 <span class="pagination-btn pagination-btn--sm"></span>
             </div>
         </article>
+    </section>
+
+    <!-- shopping cart -->
+    <section>
+        <h2 class="title">Shopping Cart</h2>
+
+        <div class="l-shopping-cart th-card-border">
+            <div class="l-shopping-cart__products">
+                <div class="l-shopping-cart__product">
+                    <article class="l-post-card l-post-card--product-extended-card">
+                        <div class="l-post-card__row">
+                            <figure class="th-card-bg product-media">
+                                <img class="product-media__img" src="../assets/product-images/Product-1.png" alt="product-image">
+                            </figure>
+                        </div>
+                        <div class="l-post-card__row">
+                            <header class="l-post-card__header">
+                                <h3 class="h3-sb"><strong>Product Name Here</strong></h3>
+                            </header>
+                            <strong class="price--old h6-sb">INR 300</strong>
+                            <strong class="h6-sb">INR 100</strong>
+                        </div>
+                        <button type="button" class="l-post-card__action-btn btn btn-tertiary btn-tertiary--danger">
+                            <svg class="icon icon-filled icon-sw-0">
+                                <use href="#cross"></use>
+                            </svg>
+                        </button>
+                    </article>
+    
+                    
+                </div>
+                <div class="l-shopping-cart__product">
+                    <article class="l-post-card l-post-card--product-extended-card">
+                        <div class="l-post-card__row">
+                            <figure class="th-card-bg product-media">
+                                <img class="product-media__img" src="../assets/product-images/Product-1.png" alt="product-image">
+                            </figure>
+                        </div>
+                        <div class="l-post-card__row">
+                            <header class="l-post-card__header">
+                                <h3 class="h3-sb"><strong>Product Name Here</strong></h3>
+                            </header>
+                            <strong class="price--old h6-sb">INR 300</strong>
+                            <strong class="h6-sb">INR 100</strong>
+                        </div>
+                        <button type="button" class="l-post-card__action-btn btn btn-tertiary btn-tertiary--danger">
+                            <svg class="icon icon-filled icon-sw-0">
+                                <use href="#cross"></use>
+                            </svg>
+                        </button>
+                    </article>
+                </div>
+            </div>
+            <div class="l-shopping-cart__bill">
+                <span class="h3-sb">Total:</span>
+                <span class="h3-sb">INR <span>200</span> </span>
+            </div>
+            <div class="l-shopping-cart__checkout">
+                <button type="button" class="btn btn-primary">Checkout</button>
+                <button type="button" class="btn btn-secondary">Edit cart</button>
+            </div>
+        </div>
     </section>
 </body>
 </html>
