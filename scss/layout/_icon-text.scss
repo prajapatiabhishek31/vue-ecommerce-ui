@@ -1,0 +1,26 @@
+.l-icon-text {
+    text-align: center;
+
+    &__row:first-child {
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 2em;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__title {
+        margin-bottom: 1em;
+    }
+
+    @include up-media("lg") {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+
+        &__row:first-child {
+            margin: 0;
+            margin-right: 2em;
+        }
+    }
+}
