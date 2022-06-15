@@ -47,4 +47,23 @@
         }
     
     }
+
+    // cart item
+    &--cart-item {
+        //  .l-post-card
+        padding: 3.5em;
+        border-radius: 3em;
+    
+        &#{$layout-prefix} {
+            & > #{$layout-prefix}__row:first-child {
+                width: math.div(192, 16)*1em;
+                height: math.div(192, 16)*1em;
+                margin-right: 3.5em;
+            }
+
+            & #{$layout-prefix}__btns {
+                margin-top: 1.5em;
+            }
+        }
+    }
 }
