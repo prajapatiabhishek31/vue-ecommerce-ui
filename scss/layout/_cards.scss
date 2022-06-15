@@ -5,7 +5,6 @@
     $layout-prefix: &;
     width: fit-content;
     position: relative;
-    display: inline-block;
 
     // to position badge
     &__row--absolute {
@@ -16,54 +15,18 @@
     }
 
     &__row:first-child {
+        margin-bottom: 2em;
+    }
+
+    &__media {
         width: math.div(272, 16)*1em;
         height: math.div(272, 16)*1em;
-        margin-bottom: 2em;
         border-radius: 2em;
         overflow: hidden;
+
     }
 
     &__header {
         margin-bottom: 1em;
-    }
-    
-    // product extended card 
-    &--product-extended-card {
-        display: inline-flex;
-
-        &#{$layout-prefix} {
-    
-            & > #{$layout-prefix}__row:first-child {
-                width: math.div(96, 16)*1em;
-                height: math.div(96, 16)*1em;
-                margin-right: 1em;
-                margin-bottom: 0;
-                border-radius: 1em;
-            }
-        
-            & > #{$layout-prefix}__action-btn {
-                margin-left: 1em;
-            } 
-        }
-    
-    }
-
-    // cart item
-    &--cart-item {
-        //  .l-post-card
-        padding: 3.5em;
-        border-radius: 3em;
-    
-        &#{$layout-prefix} {
-            & > #{$layout-prefix}__row:first-child {
-                width: math.div(192, 16)*1em;
-                height: math.div(192, 16)*1em;
-                margin-right: 3.5em;
-            }
-
-            & #{$layout-prefix}__btns {
-                margin-top: 1.5em;
-            }
-        }
     }
 }
