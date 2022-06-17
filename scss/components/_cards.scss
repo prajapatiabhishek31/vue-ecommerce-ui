@@ -10,6 +10,12 @@
                 background-color: var(--c-card-bg);
             }
         }
+
+        &\:md {
+            @include up-media("md") {
+                background-color: var(--c-card-bg);
+            }
+        }
     }
     &-border {
         border: px-to-rem(2px) solid var(--c-border);
@@ -48,7 +54,7 @@
     text-align: center;
     cursor: pointer;
     object-position: center;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .price {

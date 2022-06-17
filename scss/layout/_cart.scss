@@ -44,11 +44,12 @@
         &.l-cart--checkout {
             & .l-cart__btns{
                 width: 100%;
-            } 
+            }
+             
+            & .l-cart__bill-row {
+                width: 100%;
+            }
         }
 
-        & .l-cart__bill-row {
-            width: 100%;
-        }
     }
 }
