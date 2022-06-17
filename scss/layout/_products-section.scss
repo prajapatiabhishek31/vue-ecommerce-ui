@@ -1,0 +1,28 @@
+@use "sass:math";
+
+.l-explore {
+    margin-top: math.div(104, 16)*1em;
+    text-align: center;
+
+    &__header {
+        margin-bottom: 3.5em;
+    }
+
+    &__item {
+        margin-bottom: 3.5em;
+    }
+
+    &__more {
+        text-align: center;
+    } 
+
+    @include up-media("sm") {
+        text-align: left;
+
+        &__items {
+            display: flex;
+            gap: 3%;
+            flex-flow: row wrap;
+        }
+    }
+}

@@ -5,6 +5,7 @@
     $layout-prefix: &;
     width: fit-content;
     position: relative;
+    display: inline-block;
 
     // to position badge
     &__row--absolute {
