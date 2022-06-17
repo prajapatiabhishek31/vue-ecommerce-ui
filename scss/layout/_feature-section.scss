@@ -1,0 +1,32 @@
+@use "sass:math";
+
+.l-features {
+    text-align: center;
+    margin-top: math.div(112, 16)*1em;
+
+    &__row {
+        margin-top: 3.5em;
+        
+        &-item {
+            margin-bottom: 3.5em;
+        }
+
+        @include up-media("md") {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+
+            &-item {
+                width: 50%;
+            }
+        }
+
+        @include up-media("lg") {
+            flex-flow: row nowrap;
+            
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+}

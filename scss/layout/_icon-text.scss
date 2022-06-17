@@ -18,14 +18,14 @@
         margin-bottom: 1em;
     }
 
-    @include up-media("xl") {
-        display: flex;
-        align-items: flex-start;
-        text-align: left;
+    // @include up-media("xl") {
+    //     display: flex;
+    //     align-items: flex-start;
+    //     text-align: left;
 
-        &__row:first-child {
-            margin: 0;
-            margin-right: 2em;
-        }
-    }
+    //     &__row:first-child {
+    //         margin: 0;
+    //         margin-right: 2em;
+    //     }
+    // }
 }
