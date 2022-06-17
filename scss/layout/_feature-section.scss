@@ -22,10 +22,13 @@
         }
 
         @include up-media("lg") {
+            padding: 0 4%;
             flex-flow: row nowrap;
+            gap: 8%;
             
             &-item {
-                width: 100%;
+                width: auto;
+                flex: 1;
             }
         }
     }
