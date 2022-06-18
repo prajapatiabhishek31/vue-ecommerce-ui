@@ -1,0 +1,26 @@
+@use "sass:math";
+
+.l-newsletter {
+    margin-top: math.div(104, 16)*1em;
+    margin-bottom: math.div(104, 16)*1em;
+    border-radius: 3em;
+    text-align: center;
+
+    &__row:last-child {
+        margin-top: 2.5em;
+    }
+
+    &__field {
+        text-align: left;
+        width: 60%;
+        margin-right: 1.5em;
+    }
+
+    @include up-media("md") {
+        padding: 6em 0;
+
+        &__row:last-child {
+            margin-top: 3em;
+        }
+    }
+}
