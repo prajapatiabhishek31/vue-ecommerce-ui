@@ -8,21 +8,11 @@
         margin-bottom: 3.5em;
     }
 
-    &__item {
-        margin-bottom: 3.5em;
-    }
-
     &__more {
         text-align: center;
     } 
 
     @include up-media("sm") {
         text-align: left;
-
-        &__items {
-            display: flex;
-            gap: 3%;
-            flex-flow: row wrap;
-        }
     }
 }
