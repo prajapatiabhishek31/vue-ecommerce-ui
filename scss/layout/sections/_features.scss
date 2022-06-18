@@ -1,8 +1,9 @@
+// DEPENDS ON: .l-section
+
 @use "sass:math";
 
 .l-features {
-    text-align: center;
-    margin-top: math.div(112, 16)*1em;
+    text-align: center; // overiding .l-section
 
     &__row {
         margin-top: 3.5em;

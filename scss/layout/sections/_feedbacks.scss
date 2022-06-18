@@ -1,14 +1,8 @@
+// DEPENDS ON: .l-section
 @use "sass:math";
-
 .l-feedbacks {
-    text-align: center;
     border-radius: 3.5em;
     
-    &__header {
-        margin-top: math.div(104, 16)*1em;
-        margin-bottom: 3.5em;
-    }
-
     &__reviews {
         display: flex;
         overflow: hidden;
@@ -30,7 +24,6 @@
         display: flex;
         align-items: center;
         gap: 8%;
-        text-align: left;
         padding: 3em;
 
         &__row {

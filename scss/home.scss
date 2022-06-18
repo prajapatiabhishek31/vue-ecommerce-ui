@@ -1,14 +1,17 @@
 @charset 'utf-8';
 
+
 @import './abstract/functions';
 @import './abstract/variables';
 @import './abstract/mixins';
+
 
 @import './base/reset';
 @import './base/root';
 @import './base/theme';
 @import './base/icons';
 @import './base/typography';
+
 
 @import './layout/grid';
 @import './layout/header';
@@ -17,14 +20,19 @@
 @import './layout/review';
 @import './layout/cart';
 @import './layout/cart-item';
-@import './layout/hero-section';
-@import './layout/browse-section';
-@import './layout/products-section';
-@import './layout/feature-section';
-@import './layout/feedback-section';
-@import './layout/blogs-section';
-@import './layout/newsletter';
+
+// section styles
+@import './layout/sections/section';
+@import './layout/sections/hero';
+@import './layout/sections/categories';
+@import './layout/sections/products';
+@import './layout/sections/features';
+@import './layout/sections/feedbacks';
+@import './layout/sections/blogs';
+@import './layout/sections/newsletter';
+
 @import './layout/footer';
+
 
 @import './components/button';
 @import './components/links';
@@ -38,3 +46,6 @@
 @import './components/user-dp';
 @import './components/titles';
 @import './components/cards';
+
+
+@import './utils/spacing';

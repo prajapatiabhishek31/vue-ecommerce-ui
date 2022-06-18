@@ -1,0 +1,11 @@
+.l-page-pad-x {
+    padding: 0 2em;
+
+    @include up-media("sm") {
+        padding: 0 2.5em;
+    }
+    
+    @include up-media("xl") {
+        padding: 0 3em;
+    }
+}

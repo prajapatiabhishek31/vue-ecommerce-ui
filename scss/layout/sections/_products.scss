@@ -1,0 +1,7 @@
+// DEPENDS ON: .l-section
+@use "sass:math";
+.l-explore {
+    &__more {
+        text-align: center;
+    } 
+}

@@ -1,17 +1,11 @@
-@use "sass:math";
+// DEPENDS ON: .l-section
 
+@use "sass:math";
 .l-blogs {
     // blogs grid variables
     $cols: 2;
     $gap: 8;
     
-    text-align: center;
-    margin-top: math.div(104, 16)*1em;
-
-    &__header {
-        margin-bottom: 3.5em;
-    }
-
     &__btn {
         text-align: center;
     }
@@ -42,7 +36,7 @@
         $cols: 3;
         $gap: 5;
 
-        text-align: left;
+        // text-align: left;
 
         &__items {
             gap: $gap*1%;

@@ -1,17 +1,16 @@
+// DEPENDS ON: .l-page-pad-x
+// Parent for other section stylings.
 @use "sass:math";
 
-.l-explore {
-    margin-top: math.div(104, 16)*1em;
+.l-section {
     text-align: center;
-
+    $m: math.div(104, 16)*1em;
+    margin: $m 0;
+    
     &__header {
         margin-bottom: 3.5em;
     }
-
-    &__more {
-        text-align: center;
-    } 
-
+    
     @include up-media("sm") {
         text-align: left;
     }

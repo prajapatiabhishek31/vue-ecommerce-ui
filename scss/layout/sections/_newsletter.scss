@@ -1,10 +1,9 @@
+// DEPENDS ON: .l-section
 @use "sass:math";
 
 .l-newsletter {
-    margin-top: math.div(104, 16)*1em;
-    margin-bottom: math.div(104, 16)*1em;
     border-radius: 3em;
-    text-align: center;
+    text-align: center; // overiding .l-section
 
     &__row:last-child {
         margin-top: 2.5em;
