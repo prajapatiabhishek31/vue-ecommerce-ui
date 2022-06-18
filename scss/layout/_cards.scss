@@ -3,15 +3,14 @@
 // post card
 .l-listing-card {
     $layout-prefix: &;
-    width: fit-content;
+    // width: fit-content;
     position: relative;
-    display: inline-block;
 
     // to position badge
     &__row--absolute {
         position: absolute;
-        top: 5%;
-        right: -10%;
+        top: 1.6em;
+        right: -2em;
         z-index: 0;
     }
 
@@ -19,9 +18,13 @@
         margin-bottom: 2em;
     }
 
+    &__row:last-child {
+        text-align: left;
+    }
+
     &__media {
-        width: math.div(272, 16)*1em;
-        height: math.div(272, 16)*1em;
+        width: 100%;
+        height: math.div(320, 16)*1em;
         border-radius: 2em;
         overflow: hidden;
 
@@ -30,4 +33,16 @@
     &__header {
         margin-bottom: 1em;
     }
+
+    &.l-listing-card--blog-card {
+        & .product-media {
+            object-fit: cover;
+        }
+    }
+    
+    &.l-listing-card--blog-card.l-listing-card--blog-card-md {
+        & .l-listing-card__media {
+            // height: calc(math.div(300, 16)*1em + 10vw);
+        }
+    } 
 }
