@@ -1,8 +1,9 @@
 @use "sass:math";
 
 .link {
-    @include set-typography(px-to-rem(20px), math.div(24, 20), 400);
-    text-decoration: underline;
-    color: var(--c-text);
+    // @include set-typography(px-to-rem(20px), math.div(24, 20), 400);
+    // text-decoration: underline;
+    // color: var(--c-text);
+    // cursor: pointer;
     cursor: pointer;
 }

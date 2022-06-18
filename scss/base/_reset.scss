@@ -39,6 +39,10 @@ strong {
     font-weight: inherit;
 }
 
+li {
+    list-style: none;
+}
+
 body {
     background-color: var(--c-body-bg);
     font-family: 'Montserrat', sans-serif;
