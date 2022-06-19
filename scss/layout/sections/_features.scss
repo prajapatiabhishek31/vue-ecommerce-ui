@@ -33,4 +33,36 @@
             }
         }
     }
+
+    &.l-features--product {
+        @include up-media("md") {
+            & > .l-features__row {
+                display: block;
+
+                & > .l-features__row-item {
+                    width: 100%;
+                }
+            }
+        }
+
+        @include up-media("xl") {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+
+            display: flex;
+            align-items: flex-start;
+            gap: 10%;
+            text-align: left;
+
+            & > .l-features__header {
+                width: 40%;
+            }
+            & > .l-features__row {
+                width: 50%;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
 }
