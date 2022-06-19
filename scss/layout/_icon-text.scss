@@ -18,14 +18,18 @@
         margin-bottom: 1em;
     }
 
-    // @include up-media("xl") {
-    //     display: flex;
-    //     align-items: flex-start;
-    //     text-align: left;
-
-    //     &__row:first-child {
-    //         margin: 0;
-    //         margin-right: 2em;
-    //     }
-    // }
+    &.l-icon-text--flex\:xl {
+        @include up-media("xl") {
+            display: flex;
+            align-items: flex-start;
+            gap: 2em;
+            text-align: left;
+    
+            & > .l-icon-text__row:first-child {
+                margin: 0;
+                min-width: px-to-rem(64px);
+                min-height: px-to-rem(64px);
+            }
+        }
+    }
 }
