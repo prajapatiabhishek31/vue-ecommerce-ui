@@ -7,3 +7,26 @@
     // cursor: pointer;
     cursor: pointer;
 }
+
+.breadcrumb {
+    &-link {
+        color: var(--c-text);
+        cursor: pointer;
+        @include apply-font("h4-b");
+        font-weight: 500;
+
+        &__text {
+            margin-right: 1rem;
+        }
+
+        &__icon {
+            vertical-align: middle;
+        }
+
+        &.is-last {
+            & > .breadcrumb-link__icon {
+                display: none;
+            }
+        }
+    }
+}
