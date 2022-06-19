@@ -2,10 +2,10 @@
 
 @use "sass:math";
 
-.l-browse {
+.l-categories {
     position: relative;
 
-    &__categories {
+    &__items {
         margin: 1.5em 0 0 0;
         padding: 2em 0 2em math.div(44, 16)*1em;
         display: flex;
@@ -20,7 +20,7 @@
         }
     }
 
-    &__category {
+    &__item {
         margin-right: 2em;
     }
 
