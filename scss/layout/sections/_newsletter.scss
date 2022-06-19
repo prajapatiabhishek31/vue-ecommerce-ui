@@ -7,12 +7,22 @@
 
     &__row:last-child {
         margin-top: 2.5em;
+
+        @include up-media("sm") {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+
+            .l-newsletter__field {
+                width: 40%;
+            }
+        }
     }
 
     &__field {
         text-align: left;
-        width: 60%;
-        margin-right: 1.5em;
+        width: 80%;
+        margin: 0 auto 1em auto;
     }
 
     @include up-media("md") {
