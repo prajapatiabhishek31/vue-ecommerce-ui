@@ -18,8 +18,10 @@
 @import './layout/cards';
 @import './layout/icon-text';
 @import './layout/review';
-@import './layout/cart';
-@import './layout/cart-item';
+
+// cart styles
+@import './layout/cart/cart';
+@import './layout/cart/cart-item';
 
 // section styles
 @import './layout/sections/section';
