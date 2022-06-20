@@ -80,6 +80,8 @@
     &-radio {
         &__text {
             color: var(--c-text);
+            vertical-align: middle;
+            margin-left: 1em;
         }
     }
 }

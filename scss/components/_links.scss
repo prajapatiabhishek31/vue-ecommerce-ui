@@ -4,8 +4,12 @@
     // @include set-typography(px-to-rem(20px), math.div(24, 20), 400);
     // text-decoration: underline;
     // color: var(--c-text);
-    // cursor: pointer;
     cursor: pointer;
+}
+
+.text-link {
+    text-decoration: underline;
+    @include apply-font("p2-r");
 }
 
 .breadcrumb {
