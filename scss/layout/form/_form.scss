@@ -1,6 +1,7 @@
 .l-form {
     padding: 1.5em;
     border-radius: 2em;
+    width: 46%;
 
     &__title {
         margin-bottom: 2.5em;
@@ -36,6 +37,11 @@
 
     &__btns {
         margin-top: 3.5em;
+    }
+
+    // form sizing
+    &-fluid {
+        width: 100%;
     }
 
     @include up-media("sm") {
