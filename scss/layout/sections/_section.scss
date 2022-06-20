@@ -6,6 +6,10 @@
     text-align: center;
     $m: math.div(104, 16)*1em;
     margin: $m 0;
+
+    &.l-section--general {
+        margin-top: 3em;
+    }
     
     &__header {
         margin-bottom: 3.5em;
