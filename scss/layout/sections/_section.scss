@@ -7,6 +7,10 @@
     $m: math.div(104, 16)*1em;
     margin: $m 0;
 
+    &__text {
+        text-align: left;
+    }
+
     &.l-section--general {
         margin-top: 3em;
     }
