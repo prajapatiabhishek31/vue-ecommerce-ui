@@ -4,16 +4,18 @@
     all: unset;
     box-sizing: inherit;
     color: var(--c-text);
-    background-color: var(--c-field-bg);
     display: block;
     @include general-box-layout(16px, 24px, 24px, 12px, 24px);
     border: math.div(2, 16)*1em solid var(--c-border);
     transition: border-color ease 200ms;
 
-
     &::placeholder {
         color: var(--c-field-placeholder);
         @include apply-font("p2-r");
+    }
+
+    &-primary {
+        background-color: var(--c-field-bg);
     }
 
     &:focus {

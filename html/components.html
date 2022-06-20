@@ -21,7 +21,7 @@
         }
     </style>
 </head>
-<body class="light-theme l-page-pad-x">
+<body class="dark-theme l-page-pad-x">
     <?xml version="1.0" encoding="utf-8"?>
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
         <symbol id="angle-arrow-down" viewBox="0 0 16 16">
@@ -390,6 +390,70 @@
         <label class="field-label field-label-lg" for="input-field">Input Field</label>
         <input class="form-field form-field-lg form-field-block" type="text" placeholder="Full length" id="input-field"/>
     </section>
+
+    <!--general form component -->
+    <section>
+        <h2 class="title">General Form Component</h2>
+
+        <form class="l-form th-card-border">
+            <header class="l-form__title">
+                <h3 class="h4-sb h2-sb:sm">Form Title</h3>
+            </header>
+            <ul>
+                <li class="l-form__field">
+                    <div class="l-form__field-label">
+                        <label class="p5-r p4-r:sm" for="input-field">Field 1</label>
+                    </div>
+                    <div class="l-form__field-input">
+                        <input class="form-field form-field-fluid" type="text" placeholder="Default size" id="input-field"/>
+                    </div>
+                </li>
+
+                <li class="l-form__field">
+                    <div class="l-form__field-label">
+                        <label class="p5-r p4-r:sm" for="input-field">Field 2</label>
+                    </div>
+                    <div class="l-form__field-input">
+                        <input class="form-field form-field-fluid" type="text" placeholder="Default size" id="input-field"/>
+                    </div>
+                </li>
+
+                <li class="l-form__field">
+                    <div class="l-form__field-label">
+                        <label class="p5-r p4-r:sm" for="input-field">Field 3</label>
+                    </div>
+                    <div class="l-form__field-input">
+                        <input class="form-field form-field-fluid" type="text" placeholder="Default size" id="input-field"/>
+                    </div>
+                </li>
+
+                <div class="l-form__field-group:sm">
+                    <li class="l-form__field">
+                        <div class="l-form__field-label">
+                            <label class="p5-r p4-r:sm" for="input-field">Field 4</label>
+                        </div>
+                        <div class="l-form__field-input">
+                            <input class="form-field form-field-fluid" type="text" placeholder="Default size" id="input-field"/>
+                        </div>
+                    </li>
+    
+                    <li class="l-form__field">
+                        <div class="l-form__field-label">
+                            <label class="p5-r p4-r:sm" for="input-field">Field 5</label>
+                        </div>
+                        <div class="l-form__field-input">
+                            <input class="form-field form-field-fluid" type="text" placeholder="Default size" id="input-field"/>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+
+            <div class="l-form__btns">
+                <button type="button" class="btn btn-primary btn-fluid">Primary</button>
+            </div>
+        </form>
+    </section>
+
 
     <!-- badges -->
     <section>
@@ -923,7 +987,7 @@
             </div>
             <div class="l-newsletter__row">
                 <div class="l-newsletter__field">
-                    <input class="form-field form-field-fluid" type="text" placeholder="Your Email" id="input-field"/>
+                    <input class="form-field form-field-primary form-field-fluid" type="text" placeholder="Your Email" id="input-field"/>
                 </div>
                 <div class="l-newsletter__btn">
                     <button type="button" class="btn btn-primary">Sign Up</button>
