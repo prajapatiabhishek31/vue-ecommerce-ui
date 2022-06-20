@@ -65,12 +65,16 @@ body {
 input[type="radio"] {
     appearance: none;
     box-sizing: content-box;
-    border: .5rem solid var(--th-c-primary-100);
+    border: .5rem solid var(--th-c-secondary-100);
     cursor: pointer;
     width: 1rem;
     height: 1rem;
     vertical-align: middle;
     border-radius: 50%;
+
+    &:checked {
+        border: .5rem solid var(--th-c-primary-100);
+    }
 }
 
 label {
