@@ -20,12 +20,12 @@
             margin-bottom: 2.5em;
         }
 
-        @include up-media("md") {
+        @include range-media("md", "xl") {
             display: flex;
             flex-flow: wrap row;
             justify-content: space-between;
             margin-bottom: 0;
-
+    
             &-row {
                 width: 40%;
             }
