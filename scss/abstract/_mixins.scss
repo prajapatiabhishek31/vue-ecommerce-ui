@@ -23,6 +23,18 @@
         @error "Down media query break point: '#{$bp}' doesn't exists!";
     }
 }
+
+@mixin range-media($min-bp, $max-bp) {
+    $min-bp-value: map.get($up-breakpoints, $min-bp);
+    $max-bp-value: map.get($up-breakpoints, $max-bp);
+    @if $min-bp-value != null and $max-bp-value != null{
+        @media screen and (min-width: $min-bp-value) and (max-width: $max-bp-value) {
+            @content;
+        }
+    } @else {
+        @error "Invalid breakpoints!";
+    }
+}
 // Media queries end 
 
 // Typography start
