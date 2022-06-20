@@ -14,7 +14,7 @@
     <title>Vue-ecommerce | Product Page UI</title>
 </head>
 
-<body class="dark-theme">
+<body class="light-theme">
     <?xml version="1.0" encoding="utf-8"?>
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
         <symbol id="angle-arrow-down" viewBox="0 0 16 16">
@@ -269,6 +269,60 @@
                 </a>
             </p>
         </nav>
+
+        <section class="l-product">
+            <div class="l-product__row">
+                <div class="l-product__media-group">
+                    <figure class="l-product__media l-product__media--active th-card-bg">
+                        <img class="product-media" src="../assets/product-images/Product-1.png" alt="product-image">
+                        <em class="l-product__media-badge h6-b badge badge-bordered badge-primary badge-bg-red">20% off</em>
+                    </figure>
+                    <figure class="l-product__media is-active th-card-bg">
+                        <img class="product-media" src="../assets/product-images/Product-1.png" alt="product-image">
+                    </figure>
+                    <figure class="l-product__media th-card-bg">
+                        <img class="product-media" src="../assets/product-images/Product-1.png" alt="product-image">
+                    </figure>
+                    <figure class="l-product__media th-card-bg">
+                        <img class="product-media" src="../assets/product-images/Product-1.png" alt="product-image">
+                    </figure>
+                </div>
+            </div>
+            <div class="l-product__row">
+                <header class="l-product__header">
+                    <em class="sub-title">- Selling Fast </em>
+                    <h1 class="h2-b h1-b:md">Sun Cream</h1>
+                </header>
+                <div>
+                    <span class="l-product__category">
+                        <em class="h6-b badge badge-secondary badge-bg-green-10">Category</em>
+                    </span>
+                    <span class="l-product__last-price">
+                        <strong class="price--old h6-sb">INR 300</strong>
+                    </span>
+                    <span class="l-product__new-price">
+                        <strong class="h5-sb">INR 100</strong>
+                    </span>
+                </div>
+                <div>
+                    <span class="l-product__btn l-product__btn--quantity">
+                        <button type="button" class="btn btn-counter">
+                            <svg class="icon icon-filled icon-sw-0">
+                                <use href="#angle-arrow-left "></use>
+                            </svg>
+                            <span class="btn-counter__text">1</span>
+                            <svg class="icon icon-filled icon-sw-0">
+                                <use href="#angle-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </span>
+                    <span class="l-product__btn l-product__btn--add">
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </span>
+                    <!-- <span class="l-product__btn l-product__btn--save"></span> -->
+                </div>
+            </div>
+        </section>
 
         <!-- product feature section -->
         <section class="l-section l-features l-features--product">
