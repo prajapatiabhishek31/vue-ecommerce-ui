@@ -1,7 +1,6 @@
 // dropdown
 .dropdown-menu {
-    margin: 2rem;
-    width: 20%; //remove this
+    display: inline-block;
     @include general-box-layout(16px, 24px, 24px, 12px, 24px);
     border: 2px solid var(--c-border);
     border-radius: px-to-rem(24px);
@@ -37,6 +36,10 @@
         & .icon {
             vertical-align: middle;
         }
+    }
+
+    &__btn-icon {
+        margin-left: 1em;
     }
 }
 
