@@ -41,7 +41,8 @@
 @import './layout/footer';
 
 
-@import './components/button';
+@import './components/buttons/button';
+@import './components/buttons/button-group';
 @import './components/links';
 @import './components/badges';
 @import './components/form-fields';
