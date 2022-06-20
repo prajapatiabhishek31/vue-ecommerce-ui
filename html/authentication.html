@@ -265,8 +265,64 @@
         </p>
     </nav>
 
-    <main class="l-page-pad-x"></main>
-    
+    <main class="l-page-pad-x">
+        <section class="l-section l-section--general">
+            <header class="l-section__header l-section__header--general">
+                <div class="l-section__title">
+                    <em class="sub-title">- Sign Up</em>
+                    <h2 class="h2-b h1-b:md">Create Account</h2>
+                </div>
+            </header>
+            <div class="l-section__content">
+                <form class="l-form mx-auto pt-0">
+                    <ul>
+                        <li class="l-form__field">
+                            <div class="l-form__field-label">
+                                <label class="p5-r p4-r:sm" for="user-email">Email Address</label>
+                            </div>
+                            <div class="l-form__field-input">
+                                <input required
+                                    class="form-field form-field-fluid" 
+                                    type="email" 
+                                    placeholder="Enter Your Email..."
+                                    id="user-email" />
+                            </div>
+                        </li>
+        
+                        <li class="l-form__field">
+                            <div class="l-form__field-label">
+                                <label class="p5-r p4-r:sm" for="user-password">Create Password</label>
+                            </div>
+                            <div class="l-form__field-input">
+                                <input required
+                                    class="form-field form-field-fluid" 
+                                    type="password" 
+                                    placeholder="Create a strong password..."
+                                    id="user-password" />
+                            </div>
+                        </li>
+
+                        <li class="l-form__field">
+                            <input class="btn-radio" type="radio" id="terms-and-conditions" />
+                            <label class="btn-radio__text p2-r fw-400" for="terms-and-conditions">I have read and agree to <a href="#" class="text-link fw-600">terms & conditions</a></label>
+                        </li>
+                    </ul>
+        
+                    <div class="l-form__btns">
+                        <div class="btn-group btn-group-horizontal:sm">
+                            <div class="btn-group__btn">
+                                <button type="button" class="btn btn-primary btn-fluid">Create Account</button>
+                            </div>
+                            <div class="btn-group__btn">
+                                <button type="button" class="btn btn-secondary btn-fluid">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer class="l-page-pad-x l-footer">
         <div class="l-footer__row">
             <button type="button" class="btn-toggle">
