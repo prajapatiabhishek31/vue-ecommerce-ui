@@ -1,0 +1,67 @@
+@use "sass:math";
+
+$grid-cols: 12;
+$gap-count: 1, 1, 4; // (min-gap-count, step, max-gap-count) // to generate gap count utility classes
+$gap-size: 3, 3, 6; // (starting size, step, max size) // to generate gap utility classes
+
+.l-row {
+    --gap-count: 0;
+    --gap: 0%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+}
+
+.l-col {
+    width: 100%;
+
+    &-auto {
+        width: auto;
+    }
+
+    @include generate-responsive-classes() using ($bp-name) {
+        @for $i from 1 through $grid-cols {
+            &-#{$i}\:#{$bp-name} {
+                $w: math.div(100, $grid-cols)*$i*1%;
+                width: calc($w - (var(--gap)*var(--gap-count))/(var(--gap-count) + 1));
+            }
+        } 
+    }
+}
+
+.gap {
+    $i: nth($gap-size, $n: 1);
+    $step: nth($gap-size, $n: 2);
+    $max: nth($gap-size, $n: 3); 
+    @include generate-responsive-classes() using ($bp-name) {
+        @while ( $i <= $max ) {
+            &-#{$i} {
+                --gap: #{$i*1%};
+            }
+                    
+            &-#{$i}\:#{$bp-name} {
+                --gap: #{$i*1%};
+            }   
+            $i: $i + $step;
+        }
+    }
+}
+
+.gap-count {
+    $i: nth($gap-count, $n: 1);
+    $step: nth($gap-count, $n: 2);
+    $max: nth($gap-count, $n: 3); 
+
+    @include generate-responsive-classes() using ($bp-name) {
+        @while ( $i <= $max ) {
+            &-#{$i} {
+                --gap-count: #{$i};
+            }
+            
+            &-#{$i}\:#{$bp-name} {
+                --gap-count: #{$i};
+            }   
+            $i: $i + $step;
+        }
+    }
+}
