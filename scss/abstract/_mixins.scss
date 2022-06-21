@@ -104,6 +104,19 @@
     border-radius: math.div($radius, $font-size)*1em;
 }
 
+// ranged iteration with a variable step
+// @param: $list -> ($start, step, end)
+@mixin for-step($list) {
+    $min: nth($list, 1);
+    $step: nth($list, 2);
+    $max: nth($list, 3);
+    @while ( $min <= $max ) {
+        $current: $min;
+        @content($current);
+        $min: $min + $step;
+    }
+}
+
 // To generate responsive classes
 @mixin generate-responsive-classes($for: "up") {
     @if $for == "up" {
