@@ -29,7 +29,7 @@ $gap-size: 3, 3, 6; // (starting size, step, max size) // to generate gap utilit
     }
 }
 
-.gap {
+.l-row-gap {
     @include for-step($gap-size) using ($current) {
         &-#{$current} {
             --gap: #{$current*1%};
@@ -45,7 +45,7 @@ $gap-size: 3, 3, 6; // (starting size, step, max size) // to generate gap utilit
     }
 }
 
-.gap-count {
+.l-row-gap-count {
     @include for-step($gap-count) using ($current) {
         &-#{$current} {
             --gap-count: #{$current};
