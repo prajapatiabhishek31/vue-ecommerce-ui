@@ -10,6 +10,7 @@
     &-horizontal\:sm {
         @include up-media("sm") {
             display: flex;
+            align-items: center;
             gap: 4%;
             
             & > .btn-group__btn {

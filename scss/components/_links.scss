@@ -8,6 +8,10 @@
 }
 
 .text-link {
+    all: unset;
+    box-sizing: inherit;
+    display: inline-block;
+    cursor: pointer;
     text-decoration: underline;
     @include apply-font("p2-r");
 }
