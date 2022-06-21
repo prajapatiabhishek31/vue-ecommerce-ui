@@ -13,38 +13,28 @@
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
-
-    @each $bp, $bp-value in $up-breakpoints {
-        &\:#{$bp} {
-            @include up-media($bp) {
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-    }
 }
 
 .ml-auto {
     margin-left: auto;
-
-    @each $bp, $bp-value in $up-breakpoints {
-        &\:#{$bp} {
-            @include up-media($bp) {
-                margin-left: auto;
-            }
-        }
-    }
 }
 
 .mr-auto {
     margin-right: auto;
+}
 
-    @each $bp, $bp-value in $up-breakpoints {
-        &\:#{$bp} {
-            @include up-media($bp) {
-                margin-right: auto;
-            }
-        }
+@include generate-responsive-classes() using ($bp-name) {
+    .mx-auto\:#{$bp-name} {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ml-auto\:#{$bp-name} {
+        margin-left: auto;
+    }
+
+    .mr-auto\:#{$bp-name} {
+        margin-right: auto;
     }
 }
 
