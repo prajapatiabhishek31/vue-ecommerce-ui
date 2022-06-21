@@ -30,38 +30,33 @@ $gap-size: 3, 3, 6; // (starting size, step, max size) // to generate gap utilit
 }
 
 .gap {
-    $i: nth($gap-size, $n: 1);
-    $step: nth($gap-size, $n: 2);
-    $max: nth($gap-size, $n: 3); 
+    @include for-step($gap-size) using ($current) {
+        &-#{$current} {
+            --gap: #{$current*1%};
+        }                    
+    }
+
     @include generate-responsive-classes() using ($bp-name) {
-        @while ( $i <= $max ) {
-            &-#{$i} {
-                --gap: #{$i*1%};
-            }
-                    
-            &-#{$i}\:#{$bp-name} {
-                --gap: #{$i*1%};
-            }   
-            $i: $i + $step;
+        @include for-step($gap-size) using ($current) {                    
+            &-#{$current}\:#{$bp-name} {
+                --gap: #{$current*1%};
+            } 
         }
     }
 }
 
 .gap-count {
-    $i: nth($gap-count, $n: 1);
-    $step: nth($gap-count, $n: 2);
-    $max: nth($gap-count, $n: 3); 
+    @include for-step($gap-count) using ($current) {
+        &-#{$current} {
+            --gap-count: #{$current};
+        }                    
+    }
 
     @include generate-responsive-classes() using ($bp-name) {
-        @while ( $i <= $max ) {
-            &-#{$i} {
-                --gap-count: #{$i};
-            }
-            
-            &-#{$i}\:#{$bp-name} {
-                --gap-count: #{$i};
-            }   
-            $i: $i + $step;
+        @include for-step($gap-count) using ($current) {                    
+            &-#{$current}\:#{$bp-name} {
+                --gap-count: #{$current};
+            } 
         }
     }
 }
