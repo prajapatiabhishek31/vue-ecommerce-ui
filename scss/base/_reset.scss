@@ -43,6 +43,10 @@ li {
     list-style: none;
 }
 
+fieldset {
+    border: none;
+}
+
 body {
     background-color: var(--c-body-bg);
     font-family: 'Montserrat', sans-serif;
