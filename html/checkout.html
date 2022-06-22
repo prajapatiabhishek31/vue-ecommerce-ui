@@ -14,7 +14,7 @@
     <title>Vue-ecommerce | Checkout Page UI</title>
 </head>
 
-<body class="light-theme">
+<body class="dark-theme">
     <?xml version="1.0" encoding="utf-8"?>
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
         <symbol id="angle-arrow-down" viewBox="0 0 16 16">
@@ -285,8 +285,38 @@
                     <h2 class="h2-b h1-b:md">Checkout</h2>
                 </div>
             </header>
+            <!-- steps component -->
+            <div class="l-steps">
+                <div class="l-step__count">
+                    <span class="notify notify-primary h6-sb h4-b:sm">1</span>
+                </div>
+                <div class="l-steps__progress">
+                    <div class="progress-bar is-completed">
+                        <div class="progress-bar__status"></div>
+                    </div>
+                </div>
+                <div class="l-step__count">
+                    <span class="notify h6-sb h4-b:sm">2</span>
+                </div>
+                <div class="l-steps__progress">
+                    <div class="progress-bar">
+                        <div class="progress-bar__status"></div>
+                    </div>
+                </div>
+                <div class="l-step__count">
+                    <span class="notify h6-sb h4-b:sm">3</span>
+                </div>
+                <div class="l-steps__progress">
+                    <div class="progress-bar">
+                        <div class="progress-bar__status"></div>
+                    </div>
+                </div>
+                <div class="l-step__count">
+                    <span class="notify h6-sb h4-b:sm">4</span>
+                </div>
+            </div>
             <div class="l-section__content">
-                <div class="l-row l-row-gap-3:lg l-row-gap-count-1:lg">
+                <div class="l-row l-gap-3 l-gap-3:lg l-col-gap-count-1:lg">
                     <div class="l-col l-col-6:lg">
                         <form class="l-form th-card-border">
                             <header class="l-form__title">
@@ -298,29 +328,30 @@
                                         <label class="p5-r p4-r:sm" for="user-email">Email Address</label>
                                     </div>
                                     <div class="l-form__field-input">
-                                        <input class="form-field form-field-fluid" type="email" placeholder="Enter Your Email..."
-                                            id="user-email" />
+                                        <input class="form-field form-field-fluid" type="email"
+                                            placeholder="Enter Your Email..." id="user-email" />
                                     </div>
                                 </li>
-                
+
                                 <li class="l-form__field">
                                     <div class="l-form__field-label">
                                         <label class="p5-r p4-r:sm" for="user-pass">Password</label>
                                     </div>
                                     <div class="l-form__field-input">
-                                        <input class="form-field form-field-fluid" type="password" placeholder="Enter Your Password..."
-                                            id="user-pass" />
+                                        <input class="form-field form-field-fluid" type="password"
+                                            placeholder="Enter Your Password..." id="user-pass" />
                                     </div>
                                 </li>
                             </ul>
-                
+
                             <div class="l-form__btns">
                                 <div class="btn-group">
                                     <div class="btn-group__btn">
                                         <button type="button" class="btn btn-primary btn-fluid">Continue</button>
                                     </div>
                                     <div class="btn-group__btn">
-                                        <button type="button" class="btn btn-secondary btn-fluid">Guest Checkout</button>
+                                        <button type="button" class="btn btn-secondary btn-fluid">Guest
+                                            Checkout</button>
                                     </div>
                                 </div>
                             </div>
@@ -346,7 +377,8 @@
                                             <strong class="h6-sb">INR 100</strong>
                                         </div>
                                         <div class="l-cart-item__row">
-                                            <button type="button" class="l-cart-item__action-btn btn btn-tertiary btn-tertiary--danger">
+                                            <button type="button"
+                                                class="l-cart-item__action-btn btn btn-tertiary btn-tertiary--danger">
                                                 <svg class="icon icon-filled icon-sw-0">
                                                     <use href="#cross"></use>
                                                 </svg>
@@ -370,7 +402,8 @@
                                             <strong class="h6-sb">INR 100</strong>
                                         </div>
                                         <div class="l-cart-item__row">
-                                            <button type="button" class="l-cart-item__action-btn btn btn-tertiary btn-tertiary--danger">
+                                            <button type="button"
+                                                class="l-cart-item__action-btn btn btn-tertiary btn-tertiary--danger">
                                                 <svg class="icon icon-filled icon-sw-0">
                                                     <use href="#cross"></use>
                                                 </svg>
@@ -393,7 +426,9 @@
                 </div>
             </div>
         </section>
+
     </main>
 
 </body>
+
 </html>
