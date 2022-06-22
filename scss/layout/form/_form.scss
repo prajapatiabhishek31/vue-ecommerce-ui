@@ -19,6 +19,10 @@
             margin-bottom: 0;
         }
 
+        &-group {
+            margin-bottom: 3em;
+        }
+
         &-group\:sm {
             @include up-media("sm") {
                 display: flex;
