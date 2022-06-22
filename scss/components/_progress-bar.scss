@@ -7,6 +7,7 @@
     &__status {
         width: 0.5rem;
         height: 100%;
+        transform: translateX(-100%);
         background-color: var(--th-c-primary-100);
     }
 
