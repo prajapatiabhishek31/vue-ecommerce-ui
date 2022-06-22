@@ -2,7 +2,7 @@
 
 $grid-cols: 12;
 $gap-count: 1, 1, 4; // (min-gap-count, step, max-gap-count) // to generate gap count utility classes
-$gap-size: 3, 3, 6; // (starting size, step, max size) // to generate gap utility classes
+$gap-size: 1, 2, 6; // (starting size, step, max size) // to generate gap utility classes
 
 .l-row {
     --gap-count: 0;
@@ -19,6 +19,13 @@ $gap-size: 3, 3, 6; // (starting size, step, max size) // to generate gap utilit
         width: auto;
     }
 
+    @for $i from 1 through $grid-cols {
+        &-#{$i} {
+            $w: math.div(100, $grid-cols)*$i*1%;
+            width: calc($w - (var(--gap)*var(--gap-count))/(var(--gap-count) + 1));
+        }
+    } 
+
     @include generate-responsive-classes() using ($bp-name) {
         @for $i from 1 through $grid-cols {
             &-#{$i}\:#{$bp-name} {
@@ -29,23 +36,23 @@ $gap-size: 3, 3, 6; // (starting size, step, max size) // to generate gap utilit
     }
 }
 
-.l-row-gap {
+.l-gap {
     @include for-step($gap-size) using ($current) {
         &-#{$current} {
-            --gap: #{$current*1%};
+            --gap: #{$current*1em};
         }                    
     }
 
     @include generate-responsive-classes() using ($bp-name) {
         @include for-step($gap-size) using ($current) {                    
             &-#{$current}\:#{$bp-name} {
-                --gap: #{$current*1%};
+                --gap: #{$current*1em};
             } 
         }
     }
 }
 
-.l-row-gap-count {
+.l-col-gap-count {
     @include for-step($gap-count) using ($current) {
         &-#{$current} {
             --gap-count: #{$current};
